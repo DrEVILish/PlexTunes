@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B8EF29C42299D2480014AB77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EF29C32299D2480014AB77 /* AppDelegate.swift */; };
+		B8EF29C62299D24A0014AB77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8EF29C52299D24A0014AB77 /* Assets.xcassets */; };
+		B8EF29C92299D24A0014AB77 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EF29C72299D24A0014AB77 /* MainMenu.xib */; };
+		B8EF29D52299D24A0014AB77 /* PlexTunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EF29D42299D24A0014AB77 /* PlexTunesTests.swift */; };
+		B8EF29E02299D24A0014AB77 /* PlexTunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EF29DF2299D24A0014AB77 /* PlexTunesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8EF29D12299D24A0014AB77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8EF29B82299D2480014AB77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8EF29BF2299D2480014AB77;
+			remoteInfo = PlexTunes;
+		};
+		B8EF29DC2299D24A0014AB77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8EF29B82299D2480014AB77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8EF29BF2299D2480014AB77;
+			remoteInfo = PlexTunes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B8EF29C02299D2480014AB77 /* PlexTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlexTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8EF29C32299D2480014AB77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8EF29C52299D24A0014AB77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8EF29C82299D24A0014AB77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B8EF29CA2299D24A0014AB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8EF29CB2299D24A0014AB77 /* PlexTunes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlexTunes.entitlements; sourceTree = "<group>"; };
+		B8EF29D02299D24A0014AB77 /* PlexTunesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlexTunesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8EF29D42299D24A0014AB77 /* PlexTunesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlexTunesTests.swift; sourceTree = "<group>"; };
+		B8EF29D62299D24A0014AB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8EF29DB2299D24A0014AB77 /* PlexTunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlexTunesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8EF29DF2299D24A0014AB77 /* PlexTunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlexTunesUITests.swift; sourceTree = "<group>"; };
+		B8EF29E12299D24A0014AB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8EF29BD2299D2480014AB77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8EF29CD2299D24A0014AB77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8EF29D82299D24A0014AB77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8EF29B72299D2480014AB77 = {
+			isa = PBXGroup;
+			children = (
+				B8EF29C22299D2480014AB77 /* PlexTunes */,
+				B8EF29D32299D24A0014AB77 /* PlexTunesTests */,
+				B8EF29DE2299D24A0014AB77 /* PlexTunesUITests */,
+				B8EF29C12299D2480014AB77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B8EF29C12299D2480014AB77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8EF29C02299D2480014AB77 /* PlexTunes.app */,
+				B8EF29D02299D24A0014AB77 /* PlexTunesTests.xctest */,
+				B8EF29DB2299D24A0014AB77 /* PlexTunesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8EF29C22299D2480014AB77 /* PlexTunes */ = {
+			isa = PBXGroup;
+			children = (
+				B8EF29C32299D2480014AB77 /* AppDelegate.swift */,
+				B8EF29C52299D24A0014AB77 /* Assets.xcassets */,
+				B8EF29C72299D24A0014AB77 /* MainMenu.xib */,
+				B8EF29CA2299D24A0014AB77 /* Info.plist */,
+				B8EF29CB2299D24A0014AB77 /* PlexTunes.entitlements */,
+			);
+			path = PlexTunes;
+			sourceTree = "<group>";
+		};
+		B8EF29D32299D24A0014AB77 /* PlexTunesTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8EF29D42299D24A0014AB77 /* PlexTunesTests.swift */,
+				B8EF29D62299D24A0014AB77 /* Info.plist */,
+			);
+			path = PlexTunesTests;
+			sourceTree = "<group>";
+		};
+		B8EF29DE2299D24A0014AB77 /* PlexTunesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B8EF29DF2299D24A0014AB77 /* PlexTunesUITests.swift */,
+				B8EF29E12299D24A0014AB77 /* Info.plist */,
+			);
+			path = PlexTunesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8EF29BF2299D2480014AB77 /* PlexTunes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8EF29E42299D24A0014AB77 /* Build configuration list for PBXNativeTarget "PlexTunes" */;
+			buildPhases = (
+				B8EF29BC2299D2480014AB77 /* Sources */,
+				B8EF29BD2299D2480014AB77 /* Frameworks */,
+				B8EF29BE2299D2480014AB77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlexTunes;
+			productName = PlexTunes;
+			productReference = B8EF29C02299D2480014AB77 /* PlexTunes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8EF29CF2299D24A0014AB77 /* PlexTunesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8EF29E72299D24A0014AB77 /* Build configuration list for PBXNativeTarget "PlexTunesTests" */;
+			buildPhases = (
+				B8EF29CC2299D24A0014AB77 /* Sources */,
+				B8EF29CD2299D24A0014AB77 /* Frameworks */,
+				B8EF29CE2299D24A0014AB77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8EF29D22299D24A0014AB77 /* PBXTargetDependency */,
+			);
+			name = PlexTunesTests;
+			productName = PlexTunesTests;
+			productReference = B8EF29D02299D24A0014AB77 /* PlexTunesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B8EF29DA2299D24A0014AB77 /* PlexTunesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8EF29EA2299D24A0014AB77 /* Build configuration list for PBXNativeTarget "PlexTunesUITests" */;
+			buildPhases = (
+				B8EF29D72299D24A0014AB77 /* Sources */,
+				B8EF29D82299D24A0014AB77 /* Frameworks */,
+				B8EF29D92299D24A0014AB77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8EF29DD2299D24A0014AB77 /* PBXTargetDependency */,
+			);
+			name = PlexTunesUITests;
+			productName = PlexTunesUITests;
+			productReference = B8EF29DB2299D24A0014AB77 /* PlexTunesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8EF29B82299D2480014AB77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = DrEVILish;
+				TargetAttributes = {
+					B8EF29BF2299D2480014AB77 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					B8EF29CF2299D24A0014AB77 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = B8EF29BF2299D2480014AB77;
+					};
+					B8EF29DA2299D24A0014AB77 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = B8EF29BF2299D2480014AB77;
+					};
+				};
+			};
+			buildConfigurationList = B8EF29BB2299D2480014AB77 /* Build configuration list for PBXProject "PlexTunes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8EF29B72299D2480014AB77;
+			productRefGroup = B8EF29C12299D2480014AB77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8EF29BF2299D2480014AB77 /* PlexTunes */,
+				B8EF29CF2299D24A0014AB77 /* PlexTunesTests */,
+				B8EF29DA2299D24A0014AB77 /* PlexTunesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8EF29BE2299D2480014AB77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8EF29C62299D24A0014AB77 /* Assets.xcassets in Resources */,
+				B8EF29C92299D24A0014AB77 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8EF29CE2299D24A0014AB77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8EF29D92299D24A0014AB77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8EF29BC2299D2480014AB77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8EF29C42299D2480014AB77 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8EF29CC2299D24A0014AB77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8EF29D52299D24A0014AB77 /* PlexTunesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8EF29D72299D24A0014AB77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8EF29E02299D24A0014AB77 /* PlexTunesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8EF29D22299D24A0014AB77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8EF29BF2299D2480014AB77 /* PlexTunes */;
+			targetProxy = B8EF29D12299D24A0014AB77 /* PBXContainerItemProxy */;
+		};
+		B8EF29DD2299D24A0014AB77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8EF29BF2299D2480014AB77 /* PlexTunes */;
+			targetProxy = B8EF29DC2299D24A0014AB77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B8EF29C72299D24A0014AB77 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8EF29C82299D24A0014AB77 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B8EF29E22299D24A0014AB77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8EF29E32299D24A0014AB77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B8EF29E52299D24A0014AB77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PlexTunes/PlexTunes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q2D3HVR7LA;
+				INFOPLIST_FILE = PlexTunes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drevilish.PlexTunes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B8EF29E62299D24A0014AB77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PlexTunes/PlexTunes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q2D3HVR7LA;
+				INFOPLIST_FILE = PlexTunes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drevilish.PlexTunes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B8EF29E82299D24A0014AB77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q2D3HVR7LA;
+				INFOPLIST_FILE = PlexTunesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drevilish.PlexTunesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlexTunes.app/Contents/MacOS/PlexTunes";
+			};
+			name = Debug;
+		};
+		B8EF29E92299D24A0014AB77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q2D3HVR7LA;
+				INFOPLIST_FILE = PlexTunesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drevilish.PlexTunesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlexTunes.app/Contents/MacOS/PlexTunes";
+			};
+			name = Release;
+		};
+		B8EF29EB2299D24A0014AB77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q2D3HVR7LA;
+				INFOPLIST_FILE = PlexTunesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drevilish.PlexTunesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PlexTunes;
+			};
+			name = Debug;
+		};
+		B8EF29EC2299D24A0014AB77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q2D3HVR7LA;
+				INFOPLIST_FILE = PlexTunesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.drevilish.PlexTunesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PlexTunes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8EF29BB2299D2480014AB77 /* Build configuration list for PBXProject "PlexTunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8EF29E22299D24A0014AB77 /* Debug */,
+				B8EF29E32299D24A0014AB77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8EF29E42299D24A0014AB77 /* Build configuration list for PBXNativeTarget "PlexTunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8EF29E52299D24A0014AB77 /* Debug */,
+				B8EF29E62299D24A0014AB77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8EF29E72299D24A0014AB77 /* Build configuration list for PBXNativeTarget "PlexTunesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8EF29E82299D24A0014AB77 /* Debug */,
+				B8EF29E92299D24A0014AB77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8EF29EA2299D24A0014AB77 /* Build configuration list for PBXNativeTarget "PlexTunesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8EF29EB2299D24A0014AB77 /* Debug */,
+				B8EF29EC2299D24A0014AB77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8EF29B82299D2480014AB77 /* Project object */;
+}
