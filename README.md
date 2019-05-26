@@ -1,6 +1,9 @@
 # PlexTunes
 Desktop App, Combination of iTunes and PlexAmp and PlexMediaPlayer (Client Only!)
 
+Build Native or Electron?
+Electron smaller learning curve.
+
 # Interface
 iTunes - Classic Interface ( iTunes 8 or 9 ) Style
 
@@ -27,7 +30,6 @@ Top Buttons
 	Shuffle
 	Repeat / Repeat All
 	Sweet Crossfades?
-	
 	Show progress of Current Track
 	Show next track
 
