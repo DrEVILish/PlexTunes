@@ -1,0 +1,12 @@
+De type script the app.
+Run a test build in Electron.
+
+Start testing the PlexAPI in npm populate the local library.
+
+Continuously sync with the server.
+Use the server IDs for local data to always use the server as the primary source.
+
+Design offline files to run and take over from the server if the server becomes unavaliable to stream from.
+
+Playlists to Sync to the server.
+Ability to update metadata.
