@@ -1,0 +1,306 @@
+PLEX-API MAP
+not all info is listed
+others data entries can be found in the JSON
+
+/library
+{
+    MediaContainer: {
+        size: arraySize
+        allowSync: boolean
+        title1: Plex Library
+        Directory: [
+            {
+                key: sections
+                title: Library Sections
+            }
+            {
+                key: recentlyAdded
+                title: Recently Added Content
+            }
+            {
+                key: onDeck
+                title: On Deck Content
+            }
+        ]
+    }
+}
+
+/library/sections
+{
+    MediaContainer: {
+        size: arraySize
+        title1: Plex Library
+        Directory: [
+            {
+                key: string ID
+                type: (artist|show|movie)
+                title: "Music"
+                language: "en"
+                composite: /library/sections/$key/composite/(longInt)
+            }
+        ]
+    }
+}
+
+/library/sections/$key
+{
+    MediaContainer: {
+        size: arraySize
+        librarySectionID: $key
+        title1: 
+        Directory: [
+            {
+                key: all | albums | genre | decade | year | collection | recentlyAdded | folder
+            }
+            {
+                prompt: Search for Artists | Albums | Tracks
+                key: search?type=8 | 9 | 10
+            }
+        ]
+    }
+}
+
+/library/sections/$key/all
+{
+    MediaContainer: {
+        size: arraySize
+        title1: Music
+        title2: All Artists
+        viewGroup: artist
+        Metadata: [
+            {
+                ratingKey:
+                key: /library/metadata/$ratingKey/children
+                type: (artist)
+                title: (artist nane)
+                summary: (about artist)
+                Genre: [
+                    { tag: CSV }
+                ]
+            }
+        ]
+    }
+}
+
+/library/sections/$key/albums
+{
+    MediaContainer: {
+        size: arraySize
+        title1: Music
+        title2: By Album
+        viewGroup: album
+        Metadata: [
+            {
+                ratingKey:
+                key: /library/metadata/$ratingKey/children
+                parentRatingKey:
+                type: album
+                title: string
+                parentKey: /library/metadata/$parentRatingKey
+                parentTitle: artist
+                year: int
+                Genre: [
+                    {
+                        tag: CSV
+                    }
+                ]
+            }
+        ]
+    }
+}
+
+/library/sections/$key/recentlyAdded
+{
+    MediaContainer:{
+        size: arraySize
+        Metadata: [
+            {
+                ratingKey:
+                key: /library/metadata/$ratingKey/children
+                parentRatingKey:
+                type: album
+                title: album title
+                parentKey: /library/metadata/$parentRatingKey
+                parentTitle: artist
+                summary:
+                year:
+                Genre: [{
+                    tag: CSV
+                }]
+            }
+        ]
+    }
+}
+
+/library/metadata/$ratingKey
+ARTIST
+{
+    MediaContainer: {
+        size: arraySize
+        Metadata: [{
+            ratingKey: 
+            key: /library/metadata/$ratingKey/children
+            type: artist
+            title: artist name
+            summary: about artist
+            Genre: [{
+                tag: CSV
+            }]
+            Similar: [{
+                id: $ratingKey
+                filter: similar=$????
+                tag: album/artist
+            }]
+        }]
+    }
+}
+ALBUM
+{
+    MediaContainer: {
+        size: arraySize
+        Metadata: [{
+            ratingKey:
+            key: /library/metadata/$ratingKey/children
+            parentRatingKey:
+            type: album
+            title: album title
+            parentKey: /library/metadata/$parentRatingKey
+            parentTitle: Kraftwerk
+            summary: album summary
+            year: int
+            Genre: [{
+                tag: CSV
+            }]
+        }]
+    }
+}
+
+/library/metadata/$ratingKey/children
+ARTIST
+{
+    MediaContainer: {
+        size: arraySize
+        key:
+        parentTitle: artist name
+        summary: artist summary
+        title1: Music
+        title2: artist name
+        viewGroup: album
+        Metadata: [{
+            ratingKey:
+            key: /library/metadata/$ratingKey/children
+            parentRatingKey: 
+            type: album
+            title: album title
+            titleSort: album title sortby
+            parentKey: /library/metadata/$parentRatingKey
+            parentTitle: artist name
+            year: int
+            Genre: [{
+                tag: CSV
+            }]
+        }]
+    }
+}
+ALBUM
+{
+    MediaContainer: {
+        size: arraySize
+        grandParentRatingKey: 
+        grandParentTitle: album artist name
+        key:
+        parentTitle: album name
+        parentYear: album year
+        title1: album artist name
+        title2: album name
+        viewGroup: track
+        Metadata: [{
+            ratingKey:
+            key: /library/metadata/$ratingKey
+            parentRatingKey:
+            grandParentRatingKey:
+            type: track
+            title: track title
+            grandParentKey: /library/metadata/$grandParentRatingKey
+            parentKey: /library/metadata/$parentRatingKey
+            grandParentTitle: album artist name
+            parentTitle: album name
+            originalTitle: track artist name
+            Media: [{
+                id: int
+                audioChannels:
+                audioCodec:
+                container:
+                Part: [{
+                    id: int
+                    key: /library/parts/$id/(someint)/file.flac (raw playable or writeToFile able)
+                    file: raw file system path
+                }]
+            }]
+        }]
+    }
+}
+
+
+/playlists
+{
+    MediaContainer:{
+        size: arraySize
+        MetaData: [
+            {
+                ratingKey: string ID
+                key: /playlists/$ratingKey/items
+                guid:
+                type: playlist
+                title:
+                summary:
+                smart: boolean (generated by library filtering)
+                playlistType: "audio/video/photo"
+            }
+        ]
+    }
+}
+
+/playlists/$ratingKey/items
+{
+    MediaContainer:{
+        size: arraySize
+        composite: /playlists/$ratingKey/composite/$number?
+        playlistType: audio
+        ratingKey: string ID
+        smart: boolean
+        title:
+        MetaData: [
+            {
+                ratingKey: $ratingKey
+                key: /library/metadata/$ratingKey
+                parentRatingKey: $parentRatingKey
+                grandParentRatingKey: $grandParentRatingKey
+                librarySectionTitle: 
+                librarySectionID: int ID
+                librarySectionKey: /library/sections/$librarySectionID
+                type: track - possibly others
+                title:
+                grandParentKey: /library/metadata/$grandParentRatingKey
+                parentKey: /library/metadata/$parentRatingKey
+                grandParentTitle: [Artist Title]
+                parentTitle: [Album Title]
+                Media: [
+                    {
+                        id: int ID
+                        audioChannels: int (2)
+                        audioCodec: string ("flac")
+                        container: string ("flac")
+                        Part: [
+                            {
+                                id: int ID
+                                key: /library/parts/$id/(someint)/file.flac (raw playable or writeToFile able)
+                                file: raw file system path
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
